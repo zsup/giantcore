@@ -85,7 +85,7 @@ $('.pin').on('click', function(e) {
     }
 });
 
-var source = new EventSource("https://api.spark.io/v1/events?access_token=" + accessToken);
+var source = new EventSource("https://api.spark.io/v1/devices/events?access_token=" + accessToken);
 
 source.onopen = function() {
   checkPins();
@@ -132,6 +132,7 @@ var togglePin = function(target, message) {
 }
 
 var checkPins = function() {
+  console.log("Checking pins");
   $.post("https://api.spark.io/v1/devices/events/", {
     name: "checkpins",
     access_token: accessToken
@@ -139,5 +140,3 @@ var checkPins = function() {
       console.log(data);
   });
 }
-
-// Do this when the page is loaded

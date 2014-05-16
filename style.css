@@ -1,9 +1,22 @@
+body {
+  background-image:url("background.jpg");
+}
+
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 520px;
+  width: 320px;
+  margin-top: -260px;
+  margin-left: -160px;
+}
+
 .core {
    width: 320px;
    height: 480px;
-   background: rgba(0,0,0,0.2);
+   background: rgba(0,0,0,0.4);
    position: relative;
-   top: 15px;
    display: inline-block;
 }
 .core-butt {
@@ -11,7 +24,7 @@
    width: 240px;
    content:"";
    position: absolute;
-   border-top: 40px solid rgba(0,0,0,0.2);
+   border-top: 40px solid rgba(0,0,0,0.4);
    border-left: 40px solid transparent;
    border-right: 40px solid transparent;
    top: 480px;
@@ -110,7 +123,7 @@
     height: 24px;
     border-radius: 20px;
     content: "";
-    background: white;
+    background: rgba(0,0,0,0.3);
     position: absolute;
 }
 
@@ -155,5 +168,5 @@
 }
 
 .active {
-    background: #00acdf;
+    background: rgba(255,255,255,0.8);
 }
