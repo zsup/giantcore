@@ -1,41 +1,41 @@
-var accessToken = "66fd6f95345145e71e1218290652357f6eb9a1c6";
-var core1 = "50ff68065067545623260287";
-var core2 = "50ff6f065067545628060587";
-var core3 = "TBD3";
-var core4 = "TBD4";
+var accessToken = "7463f6b1577691cc5d287929be89ad469ce0938e";
+var core1 = "53ff7a065075535118461187";
+var core2 = "50ff68065067545647400387";
+var core3 = "55ff72065075555322220487";
+var core4 = "53ff6a065075535119241787";
 
 var cores = {
     A0: {
         core: core2,
-        pin: "D0"
+        pin: "D3"
     },
     A1: {
         core: core2,
-        pin: "D1"
+        pin: "D2"
     },
     A2: {
         core: core2,
-        pin: "D2"
+        pin: "D1"
     },
     A3: {
         core: core2,
-        pin: "D3"
+        pin: "D0"
     },
     A4: {
         core: core1,
-        pin: "D0"
+        pin: "D3"
     },
     A5: {
         core: core1,
-        pin: "D1"
+        pin: "D2"
     },
     A6: {
         core: core1,
-        pin: "D2"
+        pin: "D1"
     },
     A7: {
         core: core1,
-        pin: "D3"
+        pin: "D0"
     },
     D0: {
         core: core4,
@@ -97,16 +97,16 @@ source.addEventListener('giantcore', function(e) {
     console.log(data.data);
     if (data.coreid === core1) {
         console.log("Core1");
-        (data.data[0] === "1") ? $("#A4").addClass('active') : $("#A4").removeClass('active');
-        (data.data[1] === "1") ? $("#A5").addClass('active') : $("#A5").removeClass('active');
-        (data.data[2] === "1") ? $("#A6").addClass('active') : $("#A6").removeClass('active');
-        (data.data[3] === "1") ? $("#A7").addClass('active') : $("#A7").removeClass('active');
+        (data.data[0] === "1") ? $("#A7").addClass('active') : $("#A7").removeClass('active');
+        (data.data[1] === "1") ? $("#A6").addClass('active') : $("#A6").removeClass('active');
+        (data.data[2] === "1") ? $("#A5").addClass('active') : $("#A5").removeClass('active');
+        (data.data[3] === "1") ? $("#A4").addClass('active') : $("#A4").removeClass('active');
     } else if (data.coreid === core2) {
         console.log("Core2");
-        (data.data[0] === "1") ? $("#A0").addClass('active') : $("#A0").removeClass('active');
-        (data.data[1] === "1") ? $("#A1").addClass('active') : $("#A1").removeClass('active');
-        (data.data[2] === "1") ? $("#A2").addClass('active') : $("#A2").removeClass('active');
-        (data.data[3] === "1") ? $("#A3").addClass('active') : $("#A3").removeClass('active');
+        (data.data[0] === "1") ? $("#A3").addClass('active') : $("#A3").removeClass('active');
+        (data.data[1] === "1") ? $("#A2").addClass('active') : $("#A2").removeClass('active');
+        (data.data[2] === "1") ? $("#A1").addClass('active') : $("#A1").removeClass('active');
+        (data.data[3] === "1") ? $("#A0").addClass('active') : $("#A0").removeClass('active');
     } else if (data.coreid === core3) {
         console.log("Core3");
         (data.data[0] === "1") ? $("#D4").addClass('active') : $("#D4").removeClass('active');
