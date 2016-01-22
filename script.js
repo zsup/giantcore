@@ -1,4 +1,4 @@
-var accessToken = "4950838461db24b4a72b678dc2551f29ecb3686a";
+var accessToken = "ACCESS_TOKEN_GOES_HERE";
 var core1 = "53ff7a065075535118461187";
 var core2 = "50ff68065067545647400387";
 var core3 = "55ff72065075555322220487";
